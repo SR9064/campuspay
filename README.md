@@ -9,8 +9,6 @@ A full-stack expense-splitting and campus wallet application — built with a No
 
 ---
 
----
-
 ## ✨ Features
 
 - **Authentication** — secure signup/login with JWT and bcrypt password hashing
@@ -43,6 +41,8 @@ A full-stack expense-splitting and campus wallet application — built with a No
 
 **DevOps**
 - GitHub Actions (CI: install check, lint, production build)
+- Render (backend hosting)
+- Netlify (frontend hosting)
 
 ---
 
@@ -50,25 +50,29 @@ A full-stack expense-splitting and campus wallet application — built with a No
 campuspay/
 ├── backend/
 │ ├── src/
-│ │ ├── config/ # DB connection
-│ │ ├── controllers/ # Route logic (auth, group, expense, wallet)
-│ │ ├── middleware/ # JWT auth middleware
-│ │ ├── models/ # Mongoose schemas
-│ │ └── routes/ # Express routes
+│ │ ├── config/ DB connection
+│ │ ├── controllers/ Route logic (auth, group, expense, wallet)
+│ │ ├── middleware/ JWT auth middleware
+│ │ ├── models/ Mongoose schemas
+│ │ └── routes/ Express routes
 │ └── package.json
+│
 ├── campuspay-frontend/
 │ ├── src/
-│ │ ├── api/ # Axios instance
-│ │ ├── components/ # Reusable UI components
-│ │ ├── pages/ # Route-level pages
-│ │ └── index.css # Global styles / theme
+│ │ ├── api/ Axios instance
+│ │ ├── components/ Reusable UI components
+│ │ ├── pages/ Route-level pages
+│ │ └── index.css Global styles / theme
 │ └── package.json
-└── .github/workflows/ci.yml # CI pipeline
+│
+└── .github/
+└── workflows/
+└── ci.yml CI pipeline
 
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started (Local Development)
 
 ### Prerequisites
 - Node.js (v18+)
@@ -115,10 +119,3 @@ The app will be available at `http://localhost:5173`, connecting to the backend 
 - JWT tokens authenticate all protected routes
 - Expense payer and split amounts require explicit approval from every affected user before any debt is recorded
 - `.env` files are excluded from version control
-
----
-
-## 📄 License
-
-This project was built for educational/personal purposes.
-
