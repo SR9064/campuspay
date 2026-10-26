@@ -1,3 +1,8 @@
+## Live Demo
+- App: https://euphonious-khapse-eb360b.netlify.app
+- Demo login: `demo@campuspay.com` / `Demo@1234`
+- The backend runs on Render's free tier, so the first load can take 30-60 seconds.
+
 # 💸 CampusPay
 
 A full-stack expense-splitting and campus wallet application — built with a Node.js/Express/MongoDB backend and a React/TypeScript frontend. CampusPay lets groups of users (roommates, campus clubs, trip groups) track shared expenses, split bills fairly, settle up via an in-app wallet, and manage group membership — with a consent-based approval flow to prevent fraud or unwanted debt creation.
